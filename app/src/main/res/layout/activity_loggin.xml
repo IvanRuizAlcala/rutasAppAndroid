@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgloggin"
+    tools:context=".Loggin">
+
+    <ImageView
+        android:id="@+id/bgLogin"
+        android:layout_width="315dp"
+        android:layout_height="668dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="177dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        android:background="@drawable/rect1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <ImageView
+        android:id="@+id/iconUserLogin"
+        android:layout_width="91dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="100dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        app:layout_constraintEnd_toEndOf="@+id/bgLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toTopOf="@+id/bgLogin"
+        app:srcCompat="@drawable/usericon" />
+
+    <ImageView
+        android:id="@+id/emailIconLogin"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        app:layout_constraintEnd_toStartOf="@+id/userMail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toTopOf="@+id/bgLogin"
+        app:srcCompat="@drawable/iconmail" />
+
+    <EditText
+        android:id="@+id/userMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="usuario"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintBottom_toTopOf="@+id/userPassword"
+        app:layout_constraintEnd_toEndOf="@+id/bgLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toTopOf="@+id/bgLogin" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="406dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="218dp"
+        android:ems="10"
+        android:hint="contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/bgLogin"
+        app:layout_constraintEnd_toEndOf="@+id/bgLogin"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/bgLogin" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="244dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        app:layout_constraintEnd_toEndOf="@+id/bgLogin"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toTopOf="@+id/bgLogin"
+        app:srcCompat="@drawable/iconps" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="137dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#6D6A6A"
+        app:layout_constraintBottom_toBottomOf="@+id/bgLogin"
+        app:layout_constraintEnd_toStartOf="@+id/loginButton2"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintVertical_bias="0.609"
+        android:text="Logar" />
+
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#DB2424"
+        android:text="Registrate"
+        app:layout_constraintBottom_toBottomOf="@+id/bgLogin"
+        app:layout_constraintEnd_toEndOf="@+id/bgLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintVertical_bias="0.604" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/iconUserLogin"
+        app:layout_constraintEnd_toEndOf="@+id/bgLogin"
+        app:layout_constraintStart_toStartOf="@+id/bgLogin"
+        app:layout_constraintTop_toTopOf="@+id/bgLogin"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
