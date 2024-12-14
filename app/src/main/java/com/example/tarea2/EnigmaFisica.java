@@ -59,7 +59,7 @@ public class EnigmaFisica implements MenuSelector {
         listaD.add("90 cm³");
         listaD.add("110 cm³");
         listaD.add("95 cm³");
-        listaD.add("100 cm³");
+        listaD.add("100 cm³ ");
         return listaD;
     }
 }
